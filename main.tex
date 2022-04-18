@@ -6,6 +6,10 @@
 \input{extra_pkgs}
 \input{math_commands}
 
+\let\citetmp\citep
+\let\citep\cite
+\let\cite\citetmp
+
 \usepackage{mathtools}
 \DeclarePairedDelimiter\p{(}{)}
 \DeclarePairedDelimiter\n{|}{|}
