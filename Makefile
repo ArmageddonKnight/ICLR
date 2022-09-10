@@ -13,10 +13,10 @@ clean:
 	           -name "*.log" -o -name "*.out" -o -name "*.pdf" -o \
 		   -name "*.synctex.gz" \) | xargs $(RM)
 
-YEAR := 2022
+YEAR := 2023
 
 upgrade:
-	curl -L https://github.com/ICLR/Master-Template/raw/master/archive/iclr${YEAR}.zip -o iclr.zip
+	curl -L https://github.com/ICLR/Master-Template/raw/master/iclr${YEAR}.zip -o iclr.zip
 	unzip -o iclr.zip iclr${YEAR}/iclr${YEAR}_conference.sty \
 	                  iclr${YEAR}/iclr${YEAR}_conference.bst \
 	                  iclr${YEAR}/math_commands.tex
