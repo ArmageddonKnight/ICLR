@@ -23,4 +23,4 @@ upgrade:
 	cp iclr${YEAR}/iclr${YEAR}_conference.sty iclr_conference.sty
 	cp iclr${YEAR}/iclr${YEAR}_conference.bst iclr_conference.bst
 	cp iclr${YEAR}/math_commands.tex math_commands.tex
-	${RM} -r iclr${YEAR}.zip iclr${YEAR}
+	$(RM) -r iclr${YEAR}.zip iclr${YEAR}
