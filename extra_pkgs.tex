@@ -1,14 +1,7 @@
-\usepackage{microtype}
-
-\IfFileExists{courierten.sty}{
-  \usepackage{courierten}
-}{
-  \usepackage[varqu]{zi4}
-}
-\usepackage[T1]{fontenc}
-
 \usepackage[ruled]{algorithm2e}
+\usepackage{courierten}
 \usepackage{hyperref}
+\usepackage{microtype}
 \usepackage{pifont}
 \usepackage{xcolor}
 \usepackage{xurl}
@@ -19,7 +12,6 @@
 \usepackage{listings}
 % Math Packages
 \usepackage{amsmath, amsfonts, amsthm}
-\usepackage{amssymb, bm}
 \usepackage{nicefrac}
 
 \lstset{
@@ -53,6 +45,4 @@
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{claim}[theorem]{Claim}
 \newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem*{remark}{Remark}
 \newtheorem*{example}{Example}
