@@ -27,7 +27,7 @@ clean:
 		   -name "*.synctex.gz" \) | xargs $(RM)
 	find $(FIGURES_FOLDER) -name "*-crop.pdf" | xargs $(RM)
 
-YEAR := 2023
+YEAR := 2024
 
 upgrade:
 	curl -LO https://github.com/ICLR/Master-Template/raw/master/iclr${YEAR}.zip
