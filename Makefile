@@ -27,14 +27,14 @@ clean:
 		   -name "*.synctex.gz" \) | xargs $(RM)
 	find $(FIGURES_FOLDER) -name "*-crop.pdf" | xargs $(RM)
 
-YEAR := 2024
+YEAR := 2025
 
 upgrade:
 	curl -LO https://github.com/ICLR/Master-Template/raw/master/iclr${YEAR}.zip
-	unzip -o iclr${YEAR}.zip iclr${YEAR}/iclr${YEAR}_conference.sty \
-	                         iclr${YEAR}/iclr${YEAR}_conference.bst \
-	                         iclr${YEAR}/math_commands.tex
-	cp iclr${YEAR}/iclr${YEAR}_conference.sty iclr_conference.sty
-	cp iclr${YEAR}/iclr${YEAR}_conference.bst iclr_conference.bst
-	cp iclr${YEAR}/math_commands.tex math_commands.tex
-	$(RM) -r iclr${YEAR}.zip iclr${YEAR}
+	unzip -o iclr${YEAR}.zip ICLR\ ${YEAR}\ Template/iclr${YEAR}_conference.sty \
+	                         ICLR\ ${YEAR}\ Template/iclr${YEAR}_conference.bst \
+	                         ICLR\ ${YEAR}\ Template/math_commands.tex
+	cp ICLR\ ${YEAR}\ Template/iclr${YEAR}_conference.sty iclr_conference.sty
+	cp ICLR\ ${YEAR}\ Template/iclr${YEAR}_conference.bst iclr_conference.bst
+	cp ICLR\ ${YEAR}\ Template/math_commands.tex math_commands.tex
+	$(RM) -r iclr${YEAR}.zip ICLR\ ${YEAR}\ Template
